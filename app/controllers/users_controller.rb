@@ -1,8 +1,13 @@
 class UsersController < ApplicationController
 
   def create
-    User.create(require_params_user)    
-    redirect_to root_path
+    @user = User.new(require_params_user)
+    if @user.save
+      Greeter.welcome_email(@user).deliver
+      redirect_to root_path
+      else
+      redirect_to root_path         
+    end    
   end
 
   private
