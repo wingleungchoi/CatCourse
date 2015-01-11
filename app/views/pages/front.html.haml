@@ -1,9 +1,33 @@
-.row
-  = link_to "Abou Us", aboutus_path
-.row
-  .col-sm-10.col-sm-offset-1
-    %p Hello world!
-    = form_for @user do |f|
-      =f.text_field :name, placeholder: "Name*"
-      =f.text_field :email, placeholder: "Email*"
-      =f.submit "GET STARTED"
+.tube_layout
+  .tube_container
+    %span.glyphicon.glyphicon-remove
+    %br
+    <iframe width="640" height="480" src="//www.youtube-nocookie.com/embed/pld_Nkfoa40?rel=0" frameborder="0" allowfullscreen></iframe>  
+%section.background_cat
+  %br
+  %br
+  %br
+  %br
+  .row.subheader_container
+    %ul.nav.navbar-nav.navbar-right.subheader
+      %li.active
+        = link_to "#" do
+          Our Curriculum
+          %span.sr-only
+      %li
+        = link_to "Info Sessions", "#"
+      %li
+        =link_to "Health Coaching", "#"
+      %li
+        =link_to "About Us", "aboutus"
+  
+  .row.sign_up_form
+    .col-sm-10.col-sm-offset-1
+      %h2 Welcome to the
+      %h1 World'largest Cat Training School
+      %span.glyphicon.glyphicon-play-circle
+
+      = form_for @user do |f|
+        =f.text_field :name, placeholder: "Name*"
+        =f.text_field :email, placeholder: "Email*"
+        =f.submit "GET STARTED"
