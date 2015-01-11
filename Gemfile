@@ -16,6 +16,7 @@ gem 'pg'
 gem 'rvm'
 gem 'bootstrap_form'
 gem 'figaro'
+gem 'foundation-icons-sass-rails'
 
 group :development do
   gem 'spring'
