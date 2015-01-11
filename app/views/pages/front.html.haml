@@ -20,14 +20,83 @@
         =link_to "Health Coaching", "#"
       %li
         =link_to "About Us", "aboutus"
-  
-  .row.sign_up_form
-    .col-sm-10.col-sm-offset-1
+  .row.welcome
+    .col-sm-7.col-sm-offset-3
       %h2 Welcome to the
-      %h1 World'largest Cat Training School
+      %h1 World's Largest Cat Training School
       %span.glyphicon.glyphicon-play-circle
-
+      %br
+      %br      
+  .row.sign_up_form
+    .col-sm-7.col-sm-offset-3
+      %br 
+      %span.glyphicon.glyphicon-envelope
+      %h4 GET SAMPLE ONE OF OUR LIFE-CHANGING CLASSES NOW
       = form_for @user do |f|
-        =f.text_field :name, placeholder: "Name*"
-        =f.text_field :email, placeholder: "Email*"
-        =f.submit "GET STARTED"
+        .col-sm-4
+          =f.text_field :name, placeholder: "Name*", :class => "form-control"
+        .col-sm-4
+          =f.text_field :email, placeholder: "Email*", :class => "form-control"
+        .col-sm-3
+          =f.submit "GET STARTED", :class => "btn btn-danger"
+      %br
+      %br
+      %h4 Pay by PayPal
+      %br
+.row.band-white
+  .container
+    .row
+      .col-sm-7.col-sm-offset-3
+        %h2 Passionate about kitties training?
+        %h2 Integrative Course empowers you to launch an exciting new career and build a life you love.
+.row.text-center
+  .col-sm-4 
+    %span.glyphicon.glyphicon-signal
+    %h3 STUDY NUTRITION ONLINE ANYTIME, ANYWHERE
+    %p Discover over 100 different dietary theories and learn from the world’s top nutrition experts. The one-year course is 100% online, giving you the flexibility to study from your computer, smartphone, or tablet when it's convenient for you.
+    .p_sentence
+      %span.glyphicon.glyphicon-play
+      %a DISCOVER OUR CURRICULUM
+      
+  .col-sm-4
+    %span.glyphicon.glyphicon-calendar
+    %h3 BECOME A HEALTH COACH IN JUST ONE YEAR
+    %p Learn how to launch a fulfilling new career as a Health Coach and make money doing work you love. We give you all the tools and step-by-step training you need to build your business and start seeing clients while you’re still in school.
+    .p_sentence
+      %span.glyphicon.glyphicon-play
+      %a WHAT IS A HEALTH COACH?
+  .col-sm-4
+    %span.glyphicon.glyphicon-globe
+    %h3 JOIN A MOVEMENT TO CHANGE THE WORLD
+    %p We’re not just a school; we’re a movement! Our community is working to reverse the health crisis. Join over 50,000 students and grads in 122 countries around the world who are creating a health revolution.
+    .p_sentence
+      %span.glyphicon.glyphicon-play
+      %a LEARN ABOUT OUR MISSION
+.row.teachers
+  .col-sm-7.col-sm-offset-3
+    %h2 What Our Visiting Teachers are Saying
+  .col-sm-7.col-sm-offset-3.teacher_speech
+    .teacher_bg
+      .col-sm-2.teacher_head
+        %img(src="assets/teacher_head.png")
+      .col-sm-4
+        %h3 Kitty PHD
+        %h4 Mind-Body Medicine Expert, Bestselling Author and Guest Speaker
+    %br
+    %h2 "Integrative Nutrition offers a comprehensive holistic approach to not just nutrition but lifestyle management."
+    %br
+.row.feature_by
+  .row
+    %p featured by
+  %ul
+    %li
+      %img(src="http://s3.amazonaws.com/iin_marketing/d7/logos/people_logo.svg")
+    %li
+      %img(src="http://s3.amazonaws.com/iin_marketing/d7/logos/nbc_logo.svg")
+    %li
+      %img(src="http://s3.amazonaws.com/iin_marketing/d7/logos/nyt_logo.svg")
+    %li
+      %img(src="http://s3.amazonaws.com/iin_marketing/d7/logos/time_logo.svg")
+    %li
+      %img(src="http://s3.amazonaws.com/iin_marketing/d7/logos/usatoday_logo.svg")
+
