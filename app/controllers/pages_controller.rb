@@ -4,6 +4,6 @@ class PagesController < ApplicationController
   end
 
   def aboutus
-    
+    @user = User.new
   end
 end
