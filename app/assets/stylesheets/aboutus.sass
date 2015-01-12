@@ -6,7 +6,7 @@ section.aboutus_top
   .row.subheader_container
     ul.nav.navbar-nav.navbar-right.subheader
       li.active
-      %li
+      li
   .row.welcome
     .col-sm-7.col-sm-offset-3
       h2
@@ -59,10 +59,40 @@ section.aboutus_third
     text-align: center
     .col-sm-7.col-sm-offset-3
   ul
-    margin-left: 10%
+    margin-left: 20%
     li
       display: inline
       padding-right: 45px
       img
         height: 128px
         width: 158px
+.row.advisors
+  text-align: center
+  h4
+    margin-left: 20%
+    width: 60% 
+  .row
+    margin-top: 40px
+    .col-sm-2.pro-pic.first
+      margin-left: 20%
+    .col-sm-2.pro-pic
+      overflow: hidden
+      height: 260px
+      img
+        width: 100%
+        height: 100%
+      h4
+        margin-bottom: 20px
+      .person-data
+        color: white
+        margin-top: -50px
+        height: 260px
+        width: 100%
+        background-color: black
+        opacity: 0.8
+        transition: margin-top 0.9s ease 0s
+      .person-data:hover
+        margin-top: -270px
+    .col-sm-2.pro-pic:hover
+      .person-data
+        margin-top: -270px
