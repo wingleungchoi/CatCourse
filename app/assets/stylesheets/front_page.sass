@@ -1,5 +1,14 @@
 body
   background-color: #f1f1f1
+.modal.fade#myModal
+  .modal-dialog
+    .modal-content
+      .modal-body
+        text-align: center
+        button.close
+          span.glyphicon.glyphicon-remove
+          span
+        iframe 
 .blackbgwhitecolor
   input, textarea
     background-color: black
@@ -34,9 +43,11 @@ body
   text-align: center
   h1
     font-size: 3.0em
-  span.glyphicon.glyphicon-play-circle
-    font-size: 3.0em
-    cursor: pointer
+  a
+    span.glyphicon.glyphicon-play-circle
+      color: black
+      font-size: 3.0em
+      cursor: pointer
 .sign_up_form
   .col-sm-7
     background-color: #E8E8E8

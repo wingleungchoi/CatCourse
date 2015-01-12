@@ -3,6 +3,14 @@
     %span.glyphicon.glyphicon-remove#close_cat_tubes
     %br
     <iframe width="640" height="480" src="//www.youtube-nocookie.com/embed/pld_Nkfoa40?rel=0" frameborder="0" allowfullscreen></iframe> 
+.modal.fade{id:"myModal"}
+  .modal-dialog
+    .modal-content
+      .modal-body
+        %button.close{ :type=>"button", "data-dismiss"=>"modal", "aria-label"=>"Close"}
+          %span.glyphicon.glyphicon-remove
+          %span{ "aria-hidden"=>"true"}
+        <iframe width="320" height="240" src="//www.youtube-nocookie.com/embed/pld_Nkfoa40?rel=0" frameborder="0" allowfullscreen></iframe> 
 %section.aboutus_top
   %br
   %br
@@ -40,7 +48,8 @@
       %h4 Welcome to the Future of Nutrition
       %h3 The Institute for Integrative Nutrition (IIN) was founded in 1992 by Joshua Rosenthal. Once a small classroom of passionate students in New York City, it is now the largest nutrition school in the world. Through its innovative online learning platform, Integrative Nutrition has provided a global learning experience for over 50,000 students and graduates in 122 countries worldwide.
       %h4 Learn about our health revolution
-      %span.glyphicon.glyphicon-play-circle#play_cat_tubes
+      = link_to  "#",{"data-toggle"=>"modal", "data-target"=>"#myModal"} do
+        %span.glyphicon.glyphicon-play-circle
       %br
       %br
 .row.history
