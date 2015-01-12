@@ -13,12 +13,17 @@ body
   margin-top: -20px
   background-size: 100%
   height: 600px
+  .row.subheader_container
+    ul.nav.navbar-nav.navbar-right.subheader
+      @media all and (max-width: 768px) 
+        display: none
 .subheader_container
   height: 90px
 .height100
   height: 100px
 .subheader_in_navbar
-  display: none
+  @media all and (min-width: 768px) 
+    display: none
 .subheader
   margin-right: 25px
   a

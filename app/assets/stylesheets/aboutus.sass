@@ -5,8 +5,8 @@ section.aboutus_top
   height: 400px
   .row.subheader_container
     ul.nav.navbar-nav.navbar-right.subheader
-      li.active
-      li
+      @media all and (max-width: 768px) 
+        display: none
   .row.welcome
     .col-sm-7.col-sm-offset-3
       h2
@@ -27,6 +27,9 @@ section.aboutus_third
   background: url("aboutus_third.jpg") no-repeat
   margin-top: -20px
   background-size: 100%
+  @media all and (max-width: 768px) 
+    background-size: 250%
+    overflow: hidden
   height: 600px
   .row.welcome
     .col-sm-7.col-sm-offset-3
@@ -37,6 +40,8 @@ section.aboutus_third
       span.glyphicon.glyphicon-play-circle
 .our_core_values
   background: url("values.jpg") no-repeat
+  @media all and (max-width: 768px) 
+    background-size: 250%
   margin-top: -20px
   background-size: 100%
   height: 600px
