@@ -50,7 +50,8 @@
           =f.submit "GET STARTED", :class => "btn btn-danger"
       %br
       %br
-      %h4 Pay by PayPal
+      = link_to "Pay by PayPal", @user.payurl_url(root_path), class: "btn btn-primary"
+      %br
       %br
 .row.band-white
   .container
