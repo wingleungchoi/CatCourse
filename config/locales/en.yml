@@ -20,4 +20,33 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  subheader:
+    curriculum: "Our Curriculum"
+    info: "Info Sessions"
+    coaching: "Health Coaching"
+    about:  "About Us"
+  welcome:
+    title: "Welcome to the"
+    school: "World's Largest Cat Training School"
+    sample: "GET SAMPLE ONE OF OUR LIFE-CHANGING CLASSES NOW"
+    name: "Name*"
+    email: "Email*"
+    start: "GET STARTED"
+    paypal: "Pay by Paypal"
+  course:
+    passionate: "Passionate about kitties training?"
+    integration: "Integrative Course empowers you to launch an exciting new career and build a life you love."
+    discover0: "STUDY NUTRITION ONLINE ANYTIME, ANYWHERE"
+    discover1: "Discover over 100 different dietary theories and learn from the world’s top nutrition experts. The one-year course is 100% online, giving you the flexibility to study from your computer, smartphone, or tablet when it's convenient for you."
+    discover2: "DISCOVER OUR CURRICULUM"
+    year0: "BECOME A HEALTH COACH IN JUST ONE YEAR"
+    year1: "Learn how to launch a fulfilling new career as a Health Coach and make money doing work you love. We give you all the tools and step-by-step training you need to build your business and start seeing clients while you’re still in school."
+    year2: "WHAT IS A HEALTH COACH?"
+    world0: "JOIN A MOVEMENT TO CHANGE THE WORLD"
+    world1: "We’re not just a school; we’re a movement! Our community is working to reverse the health crisis. Join over 50,000 students and grads in 122 countries around the world who are creating a health revolution."
+    world2: "LEARN ABOUT OUR MISSION"
+  teacher:
+    say0: "What Our Visiting Teachers are Saying"
+    say1: "Kitty PHD"
+    say2: "Mind-Body Medicine Expert, Bestselling Author and Guest Speaker"
+    say3: "Integrative Nutrition offers a comprehensive holistic approach to not just nutrition but lifestyle management."

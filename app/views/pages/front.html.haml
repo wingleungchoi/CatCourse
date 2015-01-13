@@ -20,18 +20,18 @@
     %ul.nav.navbar-nav.navbar-right.subheader
       %li.active
         = link_to "#" do
-          Our Curriculum
+          = t("subheader.curriculum")
           %span.sr-only
       %li
-        = link_to "Info Sessions", "#"
+        = link_to t("subheader.info"), "#"
       %li
-        =link_to "Health Coaching", "#"
+        =link_to t("subheader.coaching"), "#"
       %li
-        =link_to "About Us", "aboutus"
+        =link_to t("subheader.about"), "aboutus"
   .row.welcome
     .col-sm-7.col-sm-offset-3
-      %h2 Welcome to the
-      %h1 World's Largest Cat Training School
+      %h2= t("welcome.title")
+      %h1= t("welcome.school")
       = link_to  "#",{"data-toggle"=>"modal", "data-target"=>"#myModal"} do
         %span.glyphicon.glyphicon-play-circle
       %br
@@ -40,60 +40,60 @@
     .col-sm-7.col-sm-offset-3
       %br 
       %span.glyphicon.glyphicon-envelope
-      %h4 GET SAMPLE ONE OF OUR LIFE-CHANGING CLASSES NOW
+      %h4= t("welcome.sample")
       = form_for @user do |f|
         .col-sm-4
-          =f.text_field :name, placeholder: "Name*", :class => "form-control"
+          =f.text_field :name, placeholder: t("welcome.name"), :class => "form-control"
         .col-sm-4
-          =f.text_field :email, placeholder: "Email*", :class => "form-control"
+          =f.text_field :email, placeholder: t("welcome.email"), :class => "form-control"
         .col-sm-3
-          =f.submit "GET STARTED", :class => "btn btn-danger"
+          =f.submit t("welcome.start"), :class => "btn btn-danger"
       %br
       %br
-      = link_to "Pay by PayPal", @user.payurl_url(root_path), class: "btn btn-primary"
+      = link_to t("welcome.paypal"), @user.payurl_url(root_path), class: "btn btn-primary"
       %br
       %br
 .row.band-white
   .container
     .row
       .col-sm-7.col-sm-offset-3
-        %h2 Passionate about kitties training?
-        %h2 Integrative Course empowers you to launch an exciting new career and build a life you love.
+        %h2= t("course.passionate")
+        %h2= t("course.integration")
 .row.text-center
   .col-sm-4 
     %span.glyphicon.glyphicon-signal
-    %h3 STUDY NUTRITION ONLINE ANYTIME, ANYWHERE
-    %p Discover over 100 different dietary theories and learn from the world’s top nutrition experts. The one-year course is 100% online, giving you the flexibility to study from your computer, smartphone, or tablet when it's convenient for you.
+    %h3= t("course.discover0")
+    %p= t("course.discover1")
     .p_sentence
       %span.glyphicon.glyphicon-play
-      %a DISCOVER OUR CURRICULUM
+      %a= t("course.discover2")
       
   .col-sm-4
     %span.glyphicon.glyphicon-calendar
-    %h3 BECOME A HEALTH COACH IN JUST ONE YEAR
-    %p Learn how to launch a fulfilling new career as a Health Coach and make money doing work you love. We give you all the tools and step-by-step training you need to build your business and start seeing clients while you’re still in school.
+    %h3= t("course.year0")
+    %p= t("course.year1")
     .p_sentence
       %span.glyphicon.glyphicon-play
-      %a WHAT IS A HEALTH COACH?
+      %a= t("course.year2")
   .col-sm-4
     %span.glyphicon.glyphicon-globe
-    %h3 JOIN A MOVEMENT TO CHANGE THE WORLD
-    %p We’re not just a school; we’re a movement! Our community is working to reverse the health crisis. Join over 50,000 students and grads in 122 countries around the world who are creating a health revolution.
+    %h3= t("course.world0")
+    %p= t("course.world1")
     .p_sentence
       %span.glyphicon.glyphicon-play
-      %a LEARN ABOUT OUR MISSION
+      %a= t("course.world2")
 .row.teachers
   .col-sm-7.col-sm-offset-3
-    %h2 What Our Visiting Teachers are Saying
+    %h2= t("teacher.say0")
   .col-sm-7.col-sm-offset-3.teacher_speech
     .teacher_bg
       .col-sm-2.teacher_head
         %img(src="assets/teacher_head.png")
       .col-sm-4
-        %h3 Kitty PHD
-        %h4 Mind-Body Medicine Expert, Bestselling Author and Guest Speaker
+        %h3= t("teacher.say1")
+        %h4= t("teacher.say2")
     %br
-    %h2 "Integrative Nutrition offers a comprehensive holistic approach to not just nutrition but lifestyle management."
+    %h2= t("teacher.say3")
     %br
 .row.feature_by
   .row

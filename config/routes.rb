@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   resources :users, only: [:create]
-
+  post "languages" => "pages#languages"
   # Example resource route with options:
   #   resources :products do
   #     member do
