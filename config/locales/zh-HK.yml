@@ -1,5 +1,6 @@
 zh-HK:
   subheader:
+    trainer: "馴貓師"
     curriculum: "我們的課程"
     info: "信息會話"
     coaching: "健康教練"
@@ -29,3 +30,5 @@ zh-HK:
     say1: "小鷹博士"
     say2: "心身醫學專家，暢銷書作家和演講嘉賓"
     say3: "綜合營養提供了一個全面的整體方法不只是營養，但生活方式的管理。"
+  feature:
+    feature: "詳情"

@@ -21,6 +21,7 @@
 
 en:
   subheader:
+    trainer: "Cat Trainer"
     curriculum: "Our Curriculum"
     info: "Info Sessions"
     coaching: "Health Coaching"
@@ -50,3 +51,5 @@ en:
     say1: "Kitty PHD"
     say2: "Mind-Body Medicine Expert, Bestselling Author and Guest Speaker"
     say3: "Integrative Nutrition offers a comprehensive holistic approach to not just nutrition but lifestyle management."
+  feature:
+    feature: "featured by"
