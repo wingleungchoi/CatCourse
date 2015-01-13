@@ -80,8 +80,6 @@ section.aboutus_third
     width: 60% 
   .row
     margin-top: 40px
-    .col-sm-2.pro-pic.first
-      margin-left: 20%
     .col-sm-2.pro-pic
       overflow: hidden
       height: 260px
@@ -90,6 +88,15 @@ section.aboutus_third
         height: 100%
       h4
         margin-bottom: 20px
+      @media all and (max-width: 768px)
+        width: 260px
+        margin-left: 30%
+      @media all and (max-width: 400px)
+        margin-left: 20%
+      .pro
+        background: no-repeat center
+        width: 100%
+        height: 100%
       .person-data
         color: white
         margin-top: -50px
