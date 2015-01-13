@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i
 
 
-  def payurl_url(return_url)
+  def payurl_url(return_url = "https://cat-training-course.herokuapp.com")
     values = {
       :business => 'wingleungchoi-facilitator@gmail.com',
       :cmd => "_xclick",
